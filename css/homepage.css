@@ -1,0 +1,35 @@
+.main-video {
+height: 100vh;
+ width: 100vw; 
+ object-fit: cover;
+}
+
+.border-top{
+  width: 100vw; 
+  height: 10px;
+  top: 0;
+}
+
+.border-bottom {
+  width: 100vw; 
+  height: 10px;
+  bottom: 0;
+}
+
+.border-left{
+  width: 10px; 
+  height: 100vh;
+  left: 0;
+}
+
+.border-right{
+  width: 10px; 
+  height: 100vh;
+  right: 0;
+}
+
+.border{
+  display: block;
+  background-color: #fff;
+  position: fixed;
+}

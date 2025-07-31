@@ -1,0 +1,85 @@
+	/* Działam metodą mobile first o wymiarach (375px) jako podstawa do stylowania */
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background: #f2f2f2;
+		font-family: 'Lato', sans-serif;
+	}
+
+	/* mobile 375px */
+
+.basicSection-style{
+	text-align: center;
+	width: 80%;
+		background-color: #ffffff;
+		color: #000000;
+		margin-bottom: 50px;
+		text-align: center;
+}
+
+
+	.footer {
+		padding: 18px;
+	width: 100%;
+		background-color: #000000;
+		color: #fefefe;
+			line-height: 1.9;
+	}
+
+	.logo-style{
+	width: 160px;
+	}
+
+	.link-style{
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	.copyright-style{
+		font-size: 12px;
+			line-height: 1;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* dostosuj układ do tabletów i większych */
+	@media (min-width: 640px) {
+		.footer {
+		}
+	}
+
+	/* np. styl dla laptopów */
+	@media (min-width: 1024px) {
+		.footer {
+		}
+	}
+
+	/* np. dla dużych monitorów */
+	@media (min-width: 1200px) {
+		.footer {
+		}
+	}
