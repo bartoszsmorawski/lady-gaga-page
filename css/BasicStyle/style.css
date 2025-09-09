@@ -1,0 +1,105 @@
+/* Działam metodą mobile first o wymiarach (375px) jako podstawa do stylowania */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+}
+
+/* Wyzerowałem style przycisku aby móc je ładnie stylować  */
+
+.reset-button {
+	all: unset; /* usuwa wszystkie style (margin, padding, border, tło itd.) */
+	display: inline-block; /* przywraca sensowne zachowanie */
+	cursor: pointer; /* wskaźnik kursora */
+}
+
+/* mobile 375px */
+
+.main-logo-mobile {
+	height: 25px;
+	width: 129px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	transition: transform 0.5s ease; /* płynna animacja */
+	transform-origin: left top;
+}
+
+.main-logo-mobile.active {
+	transform: scale(0);
+}
+
+/* -----TU PISAĆ ACTIVE */
+
+.logo-style {
+	width: 160px;
+}
+
+.top-bar {
+	display: flex;
+	flex-direction: row-reverse;
+	position: fixed;
+	z-index: 100;
+	top: 20px;
+	right: 20px;
+}
+
+			.loading-wrapper {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: #000000;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 9999;
+				transition: opacity 0.6s ease; /* płynne zanikanie */
+			}
+
+			.loading-wrapper.hidden {
+				opacity: 0;
+				pointer-events: none;
+				visibility: hidden;
+			}
+
+			.logo-loader {
+				max-width: 200px;
+				height: auto;
+			}
+
+			/* === STRONA WŁAŚCIWA === */
+			.content {
+				display: none;
+			}
+			.content.loaded {
+				display: block;
+			}
+
+/* Inne wielkości: */
+
+/* dostosuj układ do tabletów i większych */
+@media (min-width: 640px) {
+	.footer {
+	}
+}
+
+/* np. styl dla laptopów */
+@media (min-width: 1024px) {
+	.footer {
+	}
+}
+
+/* np. dla dużych monitorów */
+@media (min-width: 1200px) {
+	.footer {
+	}
+}

@@ -1,0 +1,136 @@
+/* BASIC SECTION - STYLE SECTION */
+/* BASIC SECTION- 	druga sekcja. (na stronie głównej są dwie.) */
+
+.basicSection-style {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 120px;
+	background-color: #fff;
+	display: block;
+	align-items: center;
+	padding: 15px;
+}
+
+.basicSection-tittle,
+.basicSection-tittle--second {
+	margin-bottom: -15px;
+	margin-left: 4px;
+	color: #7d78ff;
+	padding-left: 30px;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 0.9;
+}
+
+.basicSection-tittle--second {
+	margin-bottom: 10px;
+	color: #ff7061;
+}
+
+.basicSection-photo {
+	width: 305px;
+	height: 305px;
+}
+
+.basicSection-paragraph {
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.7;
+}
+
+.btn {
+	margin-bottom: 15px;
+	margin-left: 30px;
+	color: #fff;
+	padding: 10px 20px;
+	transform: skew(-25deg);
+
+	border: none;
+	background-color: transparent;
+	border-left: 4px solid #ffb4a5;
+	border-right: 4px solid #ffb4a5;
+
+	overflow: hidden;
+}
+
+.btn a {
+	position: relative;
+	display: block;
+	transform: skew(25deg);
+	z-index: 100;
+	text-decoration: none;
+	color: #000000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 15px;
+	transition: all 0.2s linear;
+}
+
+.btn:hover a {
+	color: #fff;
+}
+
+.btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #ffb4a5;
+	transition: all 0.2s linear;
+}
+
+.btn:hover::after {
+	left: 0;
+}
+
+/* Inny kolor */
+
+.btn-difrent--color {
+	color: #fff;
+	padding: 10px 20px;
+	transform: skew(-25deg);
+
+	border: none;
+	background-color: transparent;
+	border-left: 4px solid #7c6cf0;
+	border-right: 4px solid #7c6cf0;
+
+	overflow: hidden;
+}
+
+.btn-difrent--color a {
+	position: relative;
+	display: block;
+	transform: skew(25deg);
+	z-index: 100;
+	text-decoration: none;
+	color: #000000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 15px;
+	transition: all 0.2s linear;
+}
+
+.btn-difrent--color:hover a {
+	color: #fff;
+}
+
+.btn-difrent--color::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #7c6cf0;
+	transition: all 0.2s linear;
+}
+
+.btn-difrent--color:hover::after {
+	left: 0;
+}
