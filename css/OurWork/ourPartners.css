@@ -1,0 +1,123 @@
+.ourPartners-tittle {
+	color: #ff7061;
+	background-color: #fff;
+	padding-top: 40px;
+	padding-left: 35px;
+	font-size: 38px;
+	font-weight: 900;
+	line-height: 0.9;
+}
+
+.ourPartners-section {
+	background-color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.ourPartners-logo {
+	display: inline-block;
+	width: 45%;
+	margin: 5px 2%;
+	vertical-align: middle;
+}
+
+.ourPartners-picture--logo {
+	width: 70px;
+	height: auto;
+	object-fit: contain;
+}
+
+.ourPartners-description {
+	margin-top: 50px;
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.btn-OurWork--position {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: -50px;
+}
+
+.btn-OurWork {
+	color: #333;
+	padding: 10px 20px;
+	border: none;
+	background-color: transparent;
+	border-left: 2px solid #333;
+	border-right: 2px solid #333;
+	overflow: hidden;
+	position: relative;
+	display: inline-block; /* kluczowe, żeby text-align:center działało */
+	transform: none;
+	margin-left: 0; /* usuń poprzednie przesunięcie */
+}
+
+.btn-OurWork a {
+	position: relative;
+	display: block;
+	transform: none;
+	z-index: 100;
+	text-decoration: none;
+	color: #333;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	transition: all 0.2s linear;
+}
+
+.btn-OurWork::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	transition: all 0.2s linear;
+}
+
+.btn-OurWork:hover::after {
+	left: 0;
+}
+
+.btn-OurWork:hover a {
+	color: #fff;
+}
+
+@media (min-width: 640px) {
+	.ourPartners-logo {
+		width: 30%;
+	}
+
+	.ourPartners-picture--logo {
+		min-width: 60%;
+		max-width: 60%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ourPartners-tittle {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 85px;
+		font-size: 60px;
+	}
+
+	.ourPartners-description {
+		margin-top: 90px;
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.ourPartners-description {
+		margin-top: 90px;
+		font-size: 40px;
+	}
+}

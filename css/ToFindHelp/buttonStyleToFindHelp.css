@@ -1,0 +1,67 @@
+.button-container--findHelp {
+	padding-left: 35px;
+	display: flex;
+	align-items: center;
+	gap: 16px; /* odstęp między przyciskami */
+}
+
+.divider-findHelp {
+	width: 2px;
+	height: 30px;
+	background-color: white;
+	transform: rotate(15deg); /* lekko pochylona kreska */
+}
+
+.btn-findHelp {
+	background: none;
+	border: none;
+	color: black;
+	font-size: 1.4em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.btn-findHelp:hover {
+	color: white;
+}
+
+@media (min-width: 640px) {
+	.button-container--findHelp {
+		padding-top: 40px;
+		padding-left: 120px;
+	}
+	.divider-findHelp {
+		height: 45px;
+	}
+
+	.btn-findHelp {
+		font-size: 1.8em;
+	}
+}
+
+@media (min-width: 1024px) {
+	.button-container--findHelp {
+		padding-left: 280px;
+	}
+	.divider-findHelp {
+		height: 70px;
+	}
+
+	.btn-findHelp {
+		font-size: 2.3em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.button-container--findHelp {
+		padding-left: 490px;
+	}
+	.divider-findHelp {
+		height: 100px;
+	}
+
+	.btn-findHelp {
+		font-size: 3.6em;
+	}
+}

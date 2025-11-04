@@ -1,0 +1,165 @@
+/* Stworzenie hamburgera */
+
+.hamburger {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	gap: 7px;
+	z-index: 101;
+	margin-top: 3px;
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+.line {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #ffffff;
+	transition: all 0.4s linear;
+}
+
+.line-center {
+	width: 20px;
+}
+
+.hamburger.active .line-center {
+	opacity: 0;
+}
+
+.hamburger.active .line-bottom {
+	transform: rotate(45deg);
+	transform-origin: bottom right;
+}
+
+.hamburger.active .line-top {
+	transform: rotate(-45deg);
+	transform-origin: top right;
+}
+
+/* Style menu które jest w hamburgerze */
+/* Style menu dla hamburgera  */
+
+.main-menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	background-color: #000000;
+	min-width: 100vw;
+	min-height: 100vh;
+	transition: all 0.2s linear;
+}
+
+.menu {
+	list-style: none;
+}
+
+.main-menu.active {
+	opacity: 1;
+	z-index: 99;
+}
+
+.main-menu.active .tabbs-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.tabbs-wrapper {
+	min-width: 100vw;
+	min-height: 100vh;
+	transition: all 0.5s linear 0.2s;
+	position: fixed;
+	top: 0;
+	left: 100%;
+}
+
+.submenu-tabbs {
+	display: flex;
+	align-items: center;
+	padding-top: 100px;
+	padding-left: 30px;
+}
+
+.socialmedia-tabbs {
+	display: flex;
+	align-items: center;
+	padding-top: 50px;
+	padding-left: 30px;
+}
+
+.link-menu {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.link-menu:hover {
+	color: #ff7061; /* kolor w momencie kliknięcia */
+}
+
+.menu-socialmedia {
+	list-style: none;
+}
+
+.link-socialmedia {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+@media (min-width: 640px) {
+	.tabbs-wrapper {
+		margin-top: -10px;
+		margin-left: 50px;
+	}
+
+	.link-menu {
+		font-size: 45px;
+		line-height: 50px;
+	}
+
+	.socialmedia-tabbs {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	.link-socialmedia {
+		font-size: 25px;
+		line-height: 25px;
+		font-weight: 400;
+	}
+}
+
+@media (min-width: 1024px) {
+	.tabbs-wrapper {
+		margin-top: -20px;
+		margin-left: 150px;
+	}
+
+	.link-menu {
+		font-size: 55px;
+		line-height: 50px;
+	}
+
+	.socialmedia-tabbs {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	.link-socialmedia {
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 400;
+	}
+}
+
+@media (min-width: 1200px) {
+	.tabbs-wrapper {
+		margin-top: 20px;
+		margin-left: 180px;
+	}
+}

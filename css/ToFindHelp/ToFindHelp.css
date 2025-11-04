@@ -1,0 +1,145 @@
+body {
+	background: #23c8d2;
+}
+
+.toFindHelp-bgc {
+	background: #23c8d2;
+}
+
+.free-space {
+	background-color: #23c8d2;
+}
+
+.toFindHelp-section {
+	width: 296px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.toFindHelp-tittle {
+	position: relative; /* aktywuje z-index */
+	z-index: 3; /* teraz naprawdę działa */
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 0.8;
+}
+
+.toFindHelp-description--position {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 1.4;
+}
+
+.toFindHelp-description {
+	color: #fff;
+	max-width: 100vw;
+	box-sizing: border-box;
+}
+
+.toFindHelp-img {
+	position: absolute;
+	bottom: 3px;
+	z-index: 2;
+	max-width: 100%;
+	clip-path: polygon(80px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 100px /* bardziej w dół */);
+}
+
+.toFindHelp-video {
+	pointer-events: none;
+	position: relative; /* też aktywuje z-index */
+	z-index: 1;
+	max-width: 100%;
+	margin-top: -20px;
+	clip-path: polygon(80px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 100px /* bardziej w dół */);
+}
+
+/* ------------------------- */
+
+@media (min-width: 640px) {
+	.toFindHelp-section {
+		width: 580px;
+	}
+
+	.toFindHelp-section-description--position {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 35px;
+		padding-right: 35px;
+		line-height: 1.4;
+		font-weight: 500;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.video-description--smartSentenceOur---position {
+		padding-left: 70px;
+		padding-right: 70px;
+		text-align: center;
+	}
+
+	.video-description--smartSentenceOur {
+		font-size: 30px;
+	}
+
+	.toFindHelp-section {
+		width: 900px;
+	}
+
+	.toFindHelp-tittle {
+		font-size: 60px;
+	}
+
+	.toFindHelp-video {
+		position: relative; /* też aktywuje z-index */
+		z-index: 1;
+		max-width: 100%;
+		margin-top: -20px;
+		clip-path: polygon(170px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 190px /* bardziej w dół */);
+	}
+
+	.toFindHelp-section-description--position {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		padding-left: 65px;
+		padding-right: 65px;
+		font-size: 20px;
+	}
+
+	.toFindHelp-img {
+		clip-path: polygon(170px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 190px /* bardziej w dół */);
+	}
+}
+
+@media (min-width: 1200px) {
+	.video-description--smartSentenceOur {
+		font-size: 35px;
+	}
+
+	.toFindHelp-section {
+		width: 1200px;
+	}
+
+	.toFindHelp-tittle {
+		margin-bottom: -20px;
+		font-size: 90px;
+	}
+
+	.toFindHelp-video {
+		clip-path: polygon(200px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 220px /* bardziej w dół */);
+	}
+
+	.toFindHelp-section-description--position {
+		text-align: center;
+		padding-left: 180px;
+		padding-right: 180px;
+		font-size: 22px;
+	}
+
+	.toFindHelp-img {
+		clip-path: polygon(200px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 220px /* bardziej w dół */);
+	}
+}

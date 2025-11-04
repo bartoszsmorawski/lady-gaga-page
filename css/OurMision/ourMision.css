@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f8f8f8;
+}
+
+a {
+	text-decoration: none; /* usuwa podkreślenie */
+	color: inherit;
+}
+
+/* Dodatkowo możesz wyłączyć style dla różnych stanów */
+a:visited,
+a:active,
+a:hover,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+	outline: none; /* opcjonalnie, jeśli nie chcesz ramki po kliknięciu */
+}
+
+@media (min-width: 1024px) {
+
+
+	.main-logo-mobile {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+
+	.main-logo-mobile {
+		width: 220px;
+		height: auto;
+		margin-left: 230px;
+		margin-top: 15px;
+	}
+}
