@@ -3,6 +3,8 @@
 	display: flex;
 	align-items: center;
 	gap: 16px; /* odstęp między przyciskami */
+	z-index: 97;
+	position: relative;
 }
 
 .divider-findHelp {

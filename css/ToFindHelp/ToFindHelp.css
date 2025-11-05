@@ -18,6 +18,7 @@ body {
 
 .toFindHelp-tittle {
 	position: relative; /* aktywuje z-index */
+	top: 20px;
 	z-index: 3; /* teraz naprawdę działa */
 	color: #fff;
 	font-size: 40px;
@@ -40,20 +41,18 @@ body {
 }
 
 .toFindHelp-img {
-	position: absolute;
-	bottom: 3px;
 	z-index: 2;
 	max-width: 100%;
-	clip-path: polygon(80px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 100px /* bardziej w dół */);
+	clip-path: polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
 }
 
 .toFindHelp-video {
 	pointer-events: none;
-	position: relative; /* też aktywuje z-index */
+	position: relative;
 	z-index: 1;
 	max-width: 100%;
 	margin-top: -20px;
-	clip-path: polygon(80px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 100px /* bardziej w dół */);
+	clip-path: polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
 }
 
 /* ------------------------- */
@@ -94,11 +93,11 @@ body {
 	}
 
 	.toFindHelp-video {
-		position: relative; /* też aktywuje z-index */
+		position: relative;
 		z-index: 1;
 		max-width: 100%;
 		margin-top: -20px;
-		clip-path: polygon(170px 0, /* bardziej w prawo */ 100% 0, 100% 100%, 0 100%, 0 190px /* bardziej w dół */);
+		clip-path: polygon(170px 0, 100% 0, 100% 100%, 0 100%, 0 190px);
 	}
 
 	.toFindHelp-section-description--position {
