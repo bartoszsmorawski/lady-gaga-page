@@ -1,0 +1,58 @@
+.formDonate-tittle {
+	padding-top: 60px;
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.form-section {
+	margin-bottom: 10px;
+}
+
+/* Ukrycie prawdziwych inputów */
+input[type='radio'],
+input[type='checkbox'] {
+	display: none;
+}
+
+/* Styl dla etykiet udających przyciski */
+.option-label {
+	display: inline-block;
+	background-color: white;
+	color: #333;
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: 0.2s;
+}
+
+/* Styl po zaznaczeniu */
+input:checked + .option-label {
+	border-color: #333;
+	background-color: #ffddd7;
+}
+
+/* Pole tekstowe */
+input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.small-text {
+	display: block;
+	margin-top: 5px;
+	font-size: 0.9em;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,117 @@
+.btn-toDonate--section {
+	padding-top: 40px;
+}
+
+.btn-toDonate--tittle {
+	padding-bottom: 20px;
+	color: #333;
+	line-height: 0.9;
+	font-size: 35px;
+	font-weight: 400;
+	/* text-align: center; */
+}
+
+.btn-toDonate--position {
+	text-align: center;
+}
+
+.btn-toDonate {
+	margin-top: 20px;
+	color: #333;
+	padding: 10px 20px;
+	transform: none;
+
+	border: none;
+	background-color: transparent;
+	border-left: 2px solid #333;
+	border-right: 2px solid #333;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.btn-toDonate a {
+	position: relative;
+	display: block;
+	transform: none;
+	z-index: 100;
+	text-decoration: none;
+	color: #333;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	transition: all 0.2s linear;
+}
+
+.btn-toDonate::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	transition: all 0.2s linear;
+}
+
+.btn-toDonate:hover::after {
+	left: 0;
+}
+
+.btn-toDonate:hover a {
+	color: #fff;
+}
+
+@media (min-width: 1024px) {
+	.btn-toDonate--section {
+		margin-top: 100px;
+	}
+
+	.btn-toDonate--tittle {
+		padding-left: 75px;
+		padding-right: 75px;
+		font-size: 70px;
+		font-weight: 500;
+	}
+
+	.btn-toDonate--position {
+		padding-left: 10px;
+	}
+
+	.btn-toDonate {
+		margin-top: 50px;
+		padding: 10px 20px;
+
+		border-left: 3px solid #333;
+		border-right: 3px solid #333;
+	}
+
+	.btn-toDonate a {
+		font-size: 27px;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: 1200px) {
+	.btn-toDonate--section {
+		margin-top: 150px;
+	}
+
+	.btn-toDonate--tittle {
+		padding-left: 75px;
+		padding-right: 75px;
+		font-size: 70px;
+		font-weight: 500;
+	}
+	.btn-toDonate {
+		margin-top: 50px;
+		padding: 10px 20px;
+
+		border-left: 3px solid #333;
+		border-right: 3px solid #333;
+	}
+
+	.btn-toDonate a {
+		font-size: 27px;
+		font-weight: 600;
+	}
+}

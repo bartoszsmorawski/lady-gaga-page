@@ -25,26 +25,26 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 		<link
-			href="../css/BasicStyles/globalStyles.css"
+			href="../css/basicStyles/globalStyles.css"
 			rel="stylesheet" />
 
 		<link
-			href="../css/BasicStyles/Menu/hamburger.css"
+			href="../css/basicStyles/Menu/hamburger.css"
 			rel="stylesheet" />
 
 		<link
-			href="../css/BasicStyles/Menu/loop.css"
+			href="../css/basicStyles/Menu/loop.css"
 			rel="stylesheet" />
 		<link
-			href="../css/BasicStyles/Footer/footer.css"
+			href="../css/basicStyles/Footer/footer.css"
 			rel="stylesheet" />
 		<link
-			href="../css/Homepage/homepage.css"
+			href="../css/homepage/homepage.css"
 			rel="stylesheet" />
 		<link
-			href="../css/BasicStyles/animations.css"
+			href="../css/basicStyles/animations.css"
 			rel="stylesheet" />
-      		<link
+		<link
 			href="../css/ToDonate/toDonate.css"
 			rel="stylesheet" />
 		<link
@@ -107,13 +107,6 @@
 					class="main-logo-mobile"
 					src="../picture/logo-2-1.svg"
 			/></a>
-
-
-
-				<div class="section-video">
-				</div>
-
-
 
 			<div class="main-menu">
 				<div class="tabbs-wrapper">
@@ -234,39 +227,187 @@
 				class="logo-loader"
 				src="../picture/logo-2-1.svg" />
 		</div>
-		
 
-			<footer class="footer">
-				<div class="footer-container fade-text">
-					<div class="footer-logo">
-						<img
-							src="https://bornthisway.foundation/wp-content/uploads/2019/05/footer-logo-2.svg"
-							alt="Born This Way - logo" />
-						<p class="footer-text"> Building a kinder, braver world together. </p>
-					</div>
+		<div class="toDonate-section">
+			<h1 class="toDonate-tittle">DONATE US</h1>
 
-					<div class="footer-links">
-						<h4>Quick Links</h4>
-						<a href="https://bornthisway.foundation/to-get-involved/">Join Our Community</a>
-						<a href="mailto:info@bornthisway.foundation">Contact Us</a>
-						<a href="#">Privacy Policy</a>
-					</div>
+			<div class="toDonate-description--position animation-down">
+				<p class="toDonate-description"
+					>Your donation to Born This Way Foundation will support the mission of empowering and inspiring young people
+					to build a kinder and braver world by connecting them with platforms to amplify their stories and perspectives
+					and with accessible mental health resources, so they can take action in support of themselves and each
+					other.</p
+				>
 
-					<div class="footer-social">
-						<h4>Follow Us</h4>
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
-						<a href="#"><i class="fab fa-youtube"></i></a>
-					</div>
+
+			<!-- Sekcja: rodzaj płatności -->
+<div class="form-section">
+<h1 class="formDonate-tittle">DONATE ONLINE</h1>
+				<p>RECURRING PAYMENT</p>
+				<input
+					type="radio"
+					id="oneTime"
+					name="payment"
+					value="oneTime" />
+				<label
+					for="oneTime"
+					class="option-label"
+					>One Time Donation</label
+				>
+
+				<input
+					type="radio"
+					id="monthly"
+					name="payment"
+					value="monthly" />
+				<label
+					for="monthly"
+					class="option-label"
+					>Monthly Donation</label
+				>
+			</div>
+
+			<!-- Sekcja: kwota -->
+			<div class="form-section">
+				<p>SELECT AMOUNT</p>
+				<input
+					type="radio"
+					id="d10"
+					name="amount"
+					value="10" />
+				<label
+					for="d10"
+					class="option-label"
+					>$10</label
+				>
+
+				<input
+					type="radio"
+					id="d35"
+					name="amount"
+					value="35" />
+				<label
+					for="d35"
+					class="option-label"
+					>$35</label
+				>
+
+				<input
+					type="radio"
+					id="d70"
+					name="amount"
+					value="70" />
+				<label
+					for="d70"
+					class="option-label"
+					>$70</label
+				>
+
+				<input
+					type="radio"
+					id="d100"
+					name="amount"
+					value="100" />
+				<label
+					for="d100"
+					class="option-label"
+					>$100</label
+				>
+
+				<input
+					type="radio"
+					id="other"
+					name="amount"
+					value="other" />
+				<label
+					for="other"
+					class="option-label"
+					>Other</label
+				>
+			</div>
+
+			<!-- Sekcja: dedykacja -->
+			<div class="form-section">
+				<input
+					type="checkbox"
+					id="honor" />
+				<label
+					for="honor"
+					class="option-label"
+					>This gift is in honor of someone else.</label
+				>
+
+				<div
+					id="honoreeField"
+					style="display: none">
+					<label
+						for="honoreeName"
+						class="small-text"
+						>HONOREE NAME</label
+					>
+					<input
+						type="text"
+						id="honoreeName"
+						placeholder="Enter name here" />
 				</div>
-
-				<div class="footer-bottom">
-					<p>© 2025 Born This Way Foundation. All rights reserved.</p>
+				<div class="btn-toDonate--position">
+					<button class="btn-toDonate">
+						<a href="https://www.youtube.com/?app=desktop&gl=PL&hl=pl">NEXT STEP</a>
+					</button>
 				</div>
-			</footer>
+			</div>
+
+			<div class="btn-toDonate--section">
+				<h1 class="btn-toDonate--tittle">OTHER METHODS OF SUPPORT</h1>
+				<div class="btn-toDonate--position">
+					<button class="btn-toDonate">
+						<a href="https://www.youtube.com/?app=desktop&gl=PL&hl=pl">BTW Foundation`s Shop</a>
+					</button>
+				</div>
+				<div class="btn-toDonate--position">
+					<button class="btn-toDonate">
+						<a href="https://www.youtube.com/?app=desktop&gl=PL&hl=pl">Tiltify</a>
+					</button>
+				</div>
+				<div class="btn-toDonate--position">
+					<button class="btn-toDonate">
+						<a href="https://www.youtube.com/?app=desktop&gl=PL&hl=pl">Facebook Fundraiser</a>
+					</button>
+				</div>
+			</div>
 		</div>
+		<footer class="footer">
+			<div class="footer-container fade-text">
+				<div class="footer-logo">
+					<img
+						src="https://bornthisway.foundation/wp-content/uploads/2019/05/footer-logo-2.svg"
+						alt="Born This Way - logo" />
+					<p class="footer-text"> Building a kinder, braver world together. </p>
+				</div>
 
+				<div class="footer-links">
+					<h4>Quick Links</h4>
+					<a href="https://bornthisway.foundation/to-get-involved/">Join Our Community</a>
+					<a href="mailto:info@bornthisway.foundation">Contact Us</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+
+				<div class="footer-social">
+					<h4>Follow Us</h4>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>© 2025 Born This Way Foundation. All rights reserved.</p>
+			</div>
+		</footer>
+		<script
+			type="module"
+			src="../js/form.js"></script>
 		<script
 			type="module"
 			src="../js/script.js"></script>
