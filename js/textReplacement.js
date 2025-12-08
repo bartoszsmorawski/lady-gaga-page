@@ -155,8 +155,6 @@ if (index !== NaN) {
 	const personDescriptionEl = document.querySelector('.teamPerson-description');
 	const personSocialMediaEl = document.querySelector('.teamPerson-socialMedia');
 
-	console.log(personSocialMediaEl);
-
 	const buttonEl = document.querySelector('.btn-teamPerson');
 
 	const imagePath = '../picture/';

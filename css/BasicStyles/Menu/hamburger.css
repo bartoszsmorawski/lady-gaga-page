@@ -11,6 +11,14 @@
 	cursor: pointer;
 }
 
+.hamburger-dark .line {
+	background-color: #333;
+}
+
+.hamburger-dark.active .line {
+	background-color: #fff;
+}
+
 .line {
 	display: block;
 	width: 30px;

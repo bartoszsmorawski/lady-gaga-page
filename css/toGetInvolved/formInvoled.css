@@ -1,0 +1,180 @@
+/* ======= CONTAINER ======= */
+.form-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #ffffff;
+}
+
+.form-Title {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 900;
+}
+.form-subtitle {
+	margin-bottom: 15px;
+	text-align: center;
+	color: #333;
+	font-size: 15px;
+	font-weight: 900;
+}
+
+/* ======= FORM ======= */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.form-text {
+	text-align: center;
+}
+
+input,
+select {
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* -------------------------------------- */
+
+.checkbox-group input[type='checkbox'] {
+	width: 28px;
+	height: 28px;
+	accent-color: #ffffff; /* kolor zaznaczenia (wspierany przez Chrome/Edge/Safari) */
+	cursor: pointer;
+	padding-left: 20px;
+	margin-left: 8px;
+}
+
+.checkbox-group input[type='checkbox'] {
+	width: 28px;
+	height: 28px;
+	border: 2px solid #ffffff;
+}
+
+.checkbox-group input[type='checkbox'] {
+	transform: scale(1.8);
+}
+
+.checkbox-text {
+	padding-left: 20px;
+}
+
+/* -------------------------------------- */
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.submit-btn {
+	padding: 12px;
+	font-size: 18px;
+	border: 2px solid #ffffff;
+	background: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.submit-btn:hover {
+	background: #ffffff;
+	color: #ff7664;
+}
+
+/* ------------------------------------ */
+
+@media (min-width: 640px) {
+	.form-Title {
+		font-size: 57px;
+	}
+	.form-subtitle {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+	.form-text {
+		font-size: 17px;
+	}
+
+	.row {
+		flex-direction: row;
+	}
+
+	.input-group {
+		flex: 1;
+	}
+
+	.checkbox-group input[type='checkbox'] {
+		width: 24px;
+		height: 24px;
+	}
+
+	.checkbox-text {
+		padding-top: 10px;
+		font-size: 17px;
+	}
+}
+
+/* ------------------------------------ */
+
+@media (min-width: 1024px) {
+	form {
+		gap: 30px;
+	}
+
+	.form-container {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+
+	.form-Title {
+		font-size: 80px;
+	}
+	.form-subtitle {
+		margin-bottom: 30px;
+		font-size: 25px;
+	}
+}
+
+/* ------------------------------------ */
+
+@media (min-width: 1200px) {
+	.form-container {
+		padding-top: 170px;
+		max-width: 1900px;
+	}
+
+	.form-Title {
+		font-size: 120px;
+	}
+	.form-subtitle {
+		margin-bottom: 30px;
+		font-size: 35px;
+	}
+}

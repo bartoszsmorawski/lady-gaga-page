@@ -1,0 +1,169 @@
+body {
+	background: #ff7061;
+}
+
+.free-space {
+	background-color: #ff7061;
+}
+
+.ourPrograms-position {
+	width: 296px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.ourPrograms-tittle {
+	position: relative; /* aktywuje z-index */
+	top: 20px;
+	z-index: 3; /* teraz naprawdę działa */
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 0.8;
+}
+
+/* STYLE SEKCJE */
+
+.ourPrograms-section {
+	background: #ff7061;
+	padding: 2rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* --- Ujednolicenie zdjęć --- */
+.ourPrograms-section__image {
+	width: 100%;
+	height: 260px; /* Jednolita wysokość */
+	border-radius: 6px;
+	overflow: hidden; /* ucina nadmiar zdjęcia */
+}
+
+.ourPrograms-section__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* dopasowanie bez deformacji */
+	display: block;
+}
+
+.ourPrograms-section__content h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 1rem;
+}
+
+.ourPrograms-section__content p {
+	font-size: 17px;
+	line-height: 1.6;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.ourPrograms-section__button {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	padding: 0.25rem 0;
+}
+
+.ourPrograms-section__button::before,
+.ourPrograms-section__button::after {
+	content: '/';
+	font-size: 32px;
+	font-weight: 300;
+	color: #fff;
+	position: relative;
+	top: 3px;
+	margin: 0 0.5rem;
+}
+
+/* ------------------------- */
+
+@media (min-width: 640px) {
+	.ourPrograms-position {
+		width: 580px;
+	}
+
+	.ourPrograms-tittle {
+		font-size: 60px;
+	}
+
+	/* STYLE SEKCJE */
+	.ourPrograms-section {
+		padding: 3rem 2rem;
+	}
+
+	.section__content h2 {
+		font-size: 2.4rem;
+	}
+
+	.section__content p {
+		font-size: 1.05rem;
+	}
+
+	.section__image {
+		height: 400px;
+	}
+}
+/* ------------------------- */
+@media (min-width: 1024px) {
+	.ourPrograms-position {
+		width: 900px;
+	}
+
+	.ourPrograms-tittle {
+		font-size: 80px;
+		padding-left: 30px;
+	}
+
+	/* STYLE SEKCJE */
+
+	.ourPrograms-section {
+		flex-direction: row;
+		align-items: center;
+		padding: 4rem 5rem;
+	}
+
+	.ourPrograms-section__content {
+		flex: 1;
+		max-width: 550px;
+	}
+
+	.ourPrograms-section__image {
+		flex: 1;
+		height: 500px; /* jednakowe zdjęcia również na desktopie */
+	}
+
+	/* Naprzemienne odwracanie kolejności */
+	.ourPrograms-section.reverse {
+		flex-direction: row-reverse;
+	}
+}
+/* ------------------------- */
+@media (min-width: 1200px) {
+	.ourPrograms-position {
+		width: 1200px;
+	}
+
+	.ourPrograms-tittle {
+		margin-bottom: -20px;
+		font-size: 110px;
+	}
+	/* STYLE SEKCJE */
+	.ourPrograms-section {
+		padding: 5rem 7rem;
+	}
+
+	.ourPrograms-section__content h2 {
+		font-size: 3.2rem;
+	}
+
+	.ourPrograms-section__image {
+		height: 480px;
+	}
+}

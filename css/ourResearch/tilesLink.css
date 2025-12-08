@@ -1,0 +1,213 @@
+/* SIATKA */
+.cards {
+	display: grid;
+	grid-template-columns: 1fr; /* mobile-first */
+	gap: 32px;
+	max-width: 900px;
+	margin: auto;
+}
+
+.tilesTitle {
+	text-align: center;
+	font-size: 33px;
+	font-weight: 900;
+	color: #ffffff;
+}
+
+/* KAFEL */
+.card {
+	padding-top: 20px;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.card-top {
+	position: relative;
+	background: transparent;
+	border-radius: 7px;
+	border: 3px solid #ffffff;
+	padding: 32px;
+	height: 380px;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* TEKST W KAFELKU */
+.card-text {
+	padding-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #000000;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* IKONA NA DOLE */
+.card-icon {
+	text-align: center;
+	opacity: 0.9;
+}
+
+.card-icon img {
+	width: 100px;
+	height: auto;
+}
+
+/* OVERLAY NA HOVER */
+.overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 255, 255, 0);
+	transition: 0.3s ease;
+}
+
+.card:hover .overlay {
+	background: rgba(255, 255, 255, 0.55);
+}
+
+/* TYTUŁ POD KAFELKIEM */
+.card-title {
+	margin-top: 14px;
+	margin-left: 14px;
+	margin-right: 14px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+}
+
+@media (min-width: 640px) {
+	.cards {
+		display: flex;
+		grid-template-columns: 2fr;
+		gap: 0px;
+		max-width: 600px;
+		margin: auto;
+	}
+	.tilesTitle {
+		font-size: 50px;
+	}
+
+	/* KAFEL */
+	.card {
+		padding-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.card-top {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 280px;
+	}
+
+	/* TEKST W KAFELKU */
+	.card-text {
+		font-size: 16px;
+	}
+
+	/* IKONA NA DOLE */
+	.card-icon img {
+		width: 80px;
+		height: auto;
+	}
+
+	/* TYTUŁ POD KAFELKIEM */
+	.card-title {
+		margin-top: 14px;
+		margin-left: 14px;
+		margin-right: 14px;
+		font-size: 18px;
+		font-weight: 900;
+	}
+}
+
+/* -------------------------------------------------- */
+
+@media (min-width: 1024px) {
+	.cards {
+		max-width: 700px;
+	}
+	.tilesTitle {
+		font-size: 73px;
+	}
+
+	/* KAFEL */
+	.card {
+		padding-top: 60px;
+	}
+
+	.card-top {
+		height: 300px;
+	}
+
+	/* TEKST W KAFELKU */
+	.card-text {
+		font-size: 18px;
+	}
+
+	/* TYTUŁ POD KAFELKIEM */
+	.card-title {
+		font-size: 20px;
+	}
+}
+
+/* -------------------------------------- */
+
+@media (min-width: 1200px) {
+	/* SIATKA */
+	.cards {
+		display: flex;
+		grid-template-columns: 2fr;
+		gap: 0px;
+		max-width: 1200px;
+	}
+
+	.tilesTitle {
+		font-size: 125px;
+		font-weight: 500;
+	}
+
+	/* KAFEL */
+	.card {
+		padding-top: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.card-top {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 500px;
+	}
+
+	/* TEKST W KAFELKU */
+	.card-text {
+		padding-bottom: 10px;
+		font-size: 30px;
+	}
+
+	/* IKONA NA DOLE */
+	.card-icon img {
+		width: 200px;
+		height: auto;
+	}
+
+	/* TYTUŁ POD KAFELKIEM */
+	.card-title {
+		margin-top: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 35px;
+	}
+}

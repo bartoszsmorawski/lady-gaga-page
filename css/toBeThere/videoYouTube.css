@@ -1,0 +1,28 @@
+.video-wrapper {
+	position: relative;
+	width: 90%;
+	max-width: 900px; /* szerokość jak na screenie */
+	margin: 0 auto; /* wyśrodkowanie */
+	aspect-ratio: 16 / 9;
+	border-radius: 8px; /* delikatne zaokrąglenie */
+	overflow: hidden; /* żeby player nie wychodził poza ramkę */
+	box-shadow: 0 4px 15px #00000026; /* miły cień jak w projekcie */
+}
+
+.video-wrapper iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+@media (min-width: 1200px) {
+	.video-wrapper {
+		max-width: 1200px;
+	}
+}

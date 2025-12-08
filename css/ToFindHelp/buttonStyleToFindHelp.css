@@ -28,6 +28,12 @@
 	color: white;
 }
 
+.btn-findHelp--link {
+	text-decoration: none; 
+	color: inherit; 
+	background: none; 
+}
+
 @media (min-width: 640px) {
 	.button-container--findHelp {
 		padding-top: 40px;

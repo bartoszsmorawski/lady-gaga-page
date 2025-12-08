@@ -1,0 +1,153 @@
+body {
+	background-color: #e5e5e5;
+}
+
+.free-space--toBeThere {
+	padding-top: 20px;
+	background-color: #e5e5e5;
+}
+
+.toBeThere-people--picture {
+	width: 300px;
+	height: 100%;
+}
+
+.ourImpact-line {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	border-bottom: 2px solid #3333333d;
+}
+
+.free-space {
+	background-color: #e5e5e5;
+}
+
+.ourImpact-section {
+	margin: 0px auto;
+	position: relative;
+}
+
+.toBeThere-tittle {
+	position: relative; /* aktywuje z-index */
+	top: 20px;
+	z-index: 3; /* teraz naprawdę działa */
+	color: #ff7061;
+	font-size: 55px;
+	font-weight: 900;
+	line-height: 0.9;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.ourImpact-description--position {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 1.4;
+}
+
+.ourImpact-description {
+	color: #333;
+	max-width: 100vw;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.toBeThere-link {
+	text-decoration: underline;
+	color: #ff7061;
+	font-weight: 600;
+}
+
+.articles-list {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.article-subtitle {
+	color: #ff7061;
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 1;
+}
+
+hr {
+	border: none;
+	border-top: 2px solid #000000;
+	margin-bottom: 28px;
+}
+
+/* ------------------------------------------ */
+
+@media (min-width: 640px) {
+	.article-subtitle {
+		font-size: 40px;
+	}
+
+	.articles-list {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.article-subtitle {
+		font-size: 38px;
+		padding-left: 30px;
+	}
+
+	.articles-list {
+		padding-left: 60px;
+		padding-right: 40px;
+	}
+
+	.toBeThere-tittle {
+		font-size: 60px;
+		padding-left: 90px;
+	}
+
+	.ourImpact-description {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.toBeThere-people--picture {
+		display: flex;
+		align-items: center;
+		width: 945px;
+		height: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.article-subtitle {
+		font-size: 50px;
+		padding-left: 130px;
+	}
+
+	.articles-list {
+		font-size: 25px;
+		padding-left: 180px;
+		padding-right: 100px;
+	}
+
+	.toBeThere-tittle {
+		font-size: 100px;
+		padding-left: 170px;
+		padding-right: 170px;
+	}
+
+	.ourImpact-description {
+		font-size: 30px;
+		padding-left: 130px;
+		padding-right: 130px;
+	}
+
+	.toBeThere-people--picture {
+		padding-left: 140px;
+		width: 1300px;
+		height: 100%;
+	}
+}

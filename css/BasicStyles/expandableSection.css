@@ -48,7 +48,7 @@ button {
 	padding-right: 20px;
 }
 
-.accordion-description--shortest{
+.accordion-description--shortest {
 	font-weight: 500;
 	padding-bottom: 35px;
 	padding-left: 20px;
@@ -65,7 +65,7 @@ button {
 .accordion-tittle {
 	font-size: 22px;
 	font-weight: 900;
-	margin-bottom: -22px;
+	margin-bottom: 0px;
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -74,8 +74,8 @@ button {
 /* ---- IKONA + / - ---- */
 .icon {
 	position: relative;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 15px;
 	flex-shrink: 0;
 }
 
@@ -111,6 +111,40 @@ button {
 	background-color: #33a7b5;
 }
 
+@media (min-width: 640px) {
+	.accordion-header {
+		padding: 1.3rem 3rem;
+		font-size: 20px;
+	}
+
+	.accordion-description {
+		font-size: 20px;
+	}
+
+	.accordion-point {
+		font-size: 18px;
+		padding-left: 60px;
+		padding-right: 30px;
+	}
+
+	/* ---- IKONA + / - ---- */
+
+	.icon {
+		width: 40px;
+		height: 15px;
+	}
+
+	.icon::before {
+		width: 4px;
+		height: 19px;
+	}
+
+	.icon::after {
+		width: 19px;
+		height: 4px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.accordion-header {
 		padding: 1.5rem 6rem;
@@ -119,8 +153,8 @@ button {
 
 	.accordion-description {
 		font-size: 22px;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 40px;
+		padding-right: 40px;
 		padding-top: 5px;
 		padding-bottom: 30px;
 	}
@@ -144,6 +178,19 @@ button {
 	.icon::after {
 		width: 18px;
 		height: 4px;
+	}
+
+	.accordion-tittle {
+		font-size: 30px;
+		padding-left: 40px;
+		margin-bottom: 20px;
+	}
+
+	.accordion-description--shortest {
+		font-size: 19px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 @media (min-width: 1200px) {
@@ -176,5 +223,18 @@ button {
 	.icon::after {
 		width: 30px;
 		height: 5px;
+	}
+
+	.accordion-tittle {
+		font-size: 40px;
+		padding-left: 40px;
+		margin-bottom: 20px;
+	}
+
+	.accordion-description--shortest {
+		font-size: 30px;
+		padding-left: 120px;
+		padding-right: 120px;
+		padding-bottom: 50px;
 	}
 }

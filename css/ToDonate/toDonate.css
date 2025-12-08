@@ -20,9 +20,19 @@
 	color: #fff;
 }
 
+@media (min-width: 640px) {
+	.toDonate-tittle {
+		font-size: 43px;
+	}
+
+	.toDonate-description--position {
+		font-size: 20px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.toDonate-section {
-		margin-top: 100px;
+		padding-top: 180px;
 	}
 
 	.toDonate-tittle {
@@ -35,18 +45,17 @@
 	.toDonate-description--position {
 		padding-left: 80px;
 		padding-right: 80px;
-		font-size: 20px;
+		font-size: 22px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.toDonate-section {
-		margin-top: 150px;
+		padding-left: 50px;
 	}
 	.toDonate-tittle {
 		padding-left: 75px;
 		padding-right: 75px;
-		font-size: 70px;
 		font-weight: 500;
 	}
 	.toDonate-description--position {

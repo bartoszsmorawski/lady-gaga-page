@@ -1,0 +1,49 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	margin: 80px;
+	cursor: pointer;
+}
+
+.page,
+.next {
+	font-size: 24px;
+	font-weight: 600;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+/* efekt hover – delikatne przyciemnienie */
+.page:hover,
+.next:hover {
+	filter: brightness(80%);
+}
+
+/* kliknięty element (aktywna strona) staje się czarny */
+.page.active {
+	color: #333;
+}
+
+@media (min-width: 640px) {
+	.page,
+	.next {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page,
+	.next {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.page,
+	.next {
+		font-size: 40px;
+	}
+}
