@@ -1,3 +1,7 @@
+
+
+
+
 const body = document.body;
 
 // MENU -HAMBURGER
@@ -51,6 +55,27 @@ function toggleSearchLooprState() {
 
 loopElement.addEventListener('click', toggleSearchLooprState);
 
+// -------------------------------------------------
+
+// SEARCH INPUT
+const input = document.querySelector('.search-input');
+const searchButton = document.querySelector('.search-button');
+const form = document.querySelector('.search-form');
+
+form.addEventListener('submit', event => {
+	event.preventDefault();
+	const value = input.value;
+
+	const url = new URL(window.location.origin);
+	window.location.href = url.toString();
+
+	window.location.href = `${url.toString()}pages/searchArticlesResults.html?s=${value}`;
+});
+
+
+
+// -------------------------------------------------
+
 //HOMEPAGE - SLIDER
 
 const slides = document.querySelectorAll('.slide');
@@ -74,7 +99,6 @@ if ([...slides].length > 0) {
 	setInterval(nextSlide, 2500);
 }
 
-
 //----------------------------------------- CO TO JEST ?
 
 const coworkers = document.querySelectorAll('.co-worker--person');
@@ -95,6 +119,3 @@ const observer = new IntersectionObserver(
 );
 
 coworkers.forEach(el => observer.observe(el));
-
-
-

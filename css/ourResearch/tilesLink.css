@@ -1,7 +1,7 @@
 /* SIATKA */
 .cards {
 	display: grid;
-	grid-template-columns: 1fr; /* mobile-first */
+	grid-template-columns: 1fr;
 	gap: 32px;
 	max-width: 900px;
 	margin: auto;
@@ -84,8 +84,8 @@
 
 @media (min-width: 640px) {
 	.cards {
-		display: flex;
-		grid-template-columns: 2fr;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 0px;
 		max-width: 600px;
 		margin: auto;
@@ -165,8 +165,8 @@
 @media (min-width: 1200px) {
 	/* SIATKA */
 	.cards {
-		display: flex;
-		grid-template-columns: 2fr;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 0px;
 		max-width: 1200px;
 	}

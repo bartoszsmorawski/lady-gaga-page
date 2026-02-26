@@ -1,7 +1,7 @@
 //ANIMACJA WJAZDU Z DOŁU
 //CAŁY KOD DO WYJAŚNIENIA !!!!!!!
 
-const animationDown = document.querySelectorAll('.animation-down ');
+const animationDown = document.querySelectorAll('.animation-down');
 
 const animationDownObserver = new IntersectionObserver(
 	entries => {

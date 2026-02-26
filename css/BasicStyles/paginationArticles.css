@@ -1,4 +1,6 @@
 .pagination {
+	position: relative;
+	z-index: 10;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -8,7 +10,8 @@
 }
 
 .page,
-.next {
+.next,
+.prev {
 	font-size: 24px;
 	font-weight: 600;
 	color: #ffffff;
@@ -18,7 +21,8 @@
 
 /* efekt hover – delikatne przyciemnienie */
 .page:hover,
-.next:hover {
+.next:hover,
+.prev:hover {
 	filter: brightness(80%);
 }
 
@@ -29,21 +33,24 @@
 
 @media (min-width: 640px) {
 	.page,
-	.next {
+	.next,
+	.prev {
 		font-size: 30px;
 	}
 }
 
 @media (min-width: 1024px) {
 	.page,
-	.next {
+	.next,
+	.prev {
 		font-size: 30px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.page,
-	.next {
+	.next,
+	.prev {
 		font-size: 40px;
 	}
 }

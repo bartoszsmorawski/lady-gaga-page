@@ -25,6 +25,11 @@
 }
 
 .articleName {
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* liczba linii */
+	-webkit-box-orient: vertical;
+
+	overflow: hidden;
 	font-size: 25px;
 	font-weight: 600;
 	text-align: center;
@@ -41,7 +46,7 @@
 
 /* PRZYCISKI  */
 
-.btn-toBeThere {
+.btn-articleTemplate {
 	margin-top: 20px;
 	color: #333;
 	padding: 10px 20px;
@@ -58,7 +63,7 @@
 	position: relative;
 }
 
-.btn-toBeThere a {
+.btn-articleTemplate a {
 	position: relative;
 	display: block;
 	transform: none;
@@ -70,7 +75,7 @@
 	transition: all 0.2s linear;
 }
 
-.btn-toBeThere::after {
+.btn-articleTemplate::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -81,15 +86,15 @@
 	transition: all 0.2s linear;
 }
 
-.btn-toBeThere:hover::after {
+.btn-articleTemplate:hover::after {
 	left: 0;
 }
 
-.btn-toBeThere:hover a {
+.btn-articleTemplate:hover a {
 	color: #333;
 }
 
-.btn-toBeThere--position {
+.btn-articleTemplate--position {
 	padding-bottom: 20px;
 }
 

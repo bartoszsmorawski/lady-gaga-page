@@ -9,7 +9,7 @@
 			rel="icon"
 			type="image/png"
 			href="../picture/Untitled-1@3x.png" />
-		<title>OUR RESEARCH</title>
+		<title>Search Articles Result</title>
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -41,23 +41,32 @@
 		<link
 			href="../css/basicStyles/animations.css"
 			rel="stylesheet" />
-			<link
+		<link
 			href="../css/basicStyles/videoSection.css"
 			rel="stylesheet" />
-    	<link
-			href="../css/ourResearch/ourResearch.css"
+		<link
+			href="../css/ourMision/pictureSection.css"
 			rel="stylesheet" />
-      <link
-			href="../css/ourResearch/tilesLink.css"
+		<link
+			href="../css/ourMision/co-workers-section.css"
 			rel="stylesheet" />
-			      <link
-			href="../css/basicStyles/paginationArticles.css"
+		<link
+			href="../css/ToFindHelp/buttonStyleToFindHelp.css"
 			rel="stylesheet" />
-      <style>
-
-      </style>
+		<link
+			href="../css/ToFindHelp/ToFindHelp.css"
+			rel="stylesheet" />
+		<link
+			href="../css/basicStyles/expandableSection.css"
+			rel="stylesheet" />
+		<link
+			href="../css/selfCareTips/selfCareTips.css"
+			rel="stylesheet" />
+      		<link
+			href="../css/ourImpact/ourImpact.css"
+			rel="stylesheet" />
 	</head>
-	<body>
+	<body class="body-ourImpact" >
 		<span class="border border-bottom"></span>
 		<span class="border border-top"></span>
 		<span class="border border-right"></span>
@@ -73,21 +82,21 @@
 				<p class="triangle-paragraph p1"
 					><a
 						class="triangle-link"
-						href="toDonate.html"
+						href="/"
 						>TO DONATE</a
 					></p
 				>
 				<p class="triangle-paragraph p2"
 					><a
 						class="triangle-link"
-						href="toGetInvoled.html"
+						href="/"
 						>TO GET INVOLVED</a
 					></p
 				>
 				<p class="triangle-paragraph p3"
 					><a
 						class="triangle-link"
-						href="toFindHelp.html"
+						href="/"
 						>TO FIND HELP</a
 					></p
 				></span
@@ -117,14 +126,14 @@
 							<li
 								><a
 									class="link-menu"
-									href="OurMision.html"
+									href="/"
 									>TO OUR MISSION</a
 								></li
 							>
 							<li
 								><a
 									class="link-menu"
-									href="OurWork.html"
+									href="/"
 									>TO OUR WORK</a
 								></li
 							>
@@ -138,14 +147,14 @@
 							<li
 								><a
 									class="link-menu"
-									href="toFindHelp.html"
+									href="/"
 									>TO FIND HELP</a
 								></li
 							>
 							<li
 								><a
 									class="link-menu"
-									href="toDonate.html"
+									href="/"
 									>TO DONATE</a
 								></li
 							>
@@ -209,8 +218,8 @@
 			<div class="main-search">
 				<form
 					class="search-form"
-					action="/szukaj"
-					method="GET">
+					action="/"
+					>
 					<div class="input-wrap">
 						<input
 							class="search-input"
@@ -218,7 +227,7 @@
 							name="q"
 							placeholder="Enter Phrase..." />
 					</div>
-					<button class="search-button"><span>Search</span></button>
+					<button class="search-button" type="submit"><span>Search</span></button>
 				</form>
 			</div>
 		</header>
@@ -232,46 +241,19 @@
 
 		<div class="free-space"></div>
 		<div class="free-space"></div>
-		
-		<div class="ourResearch-bgc">
-			<div class="ourResearch-section">
-				<h1 class="ourResearch-tittle"
-					>OUR<br />
-					RESEARCH</h1
-				>
-				<div style="position: relative">
-		
-					<img
-						class="ourResearch-img"
-						src="../picture/Sizzle-Thumbnail-Third-Option.png" />
-				</div>
-			</div>
-			<div class="ourResearch-description--position video-description--smartSentenceOur---position">
-				<p class="ourResearch-description video-description--smartSentenceOur"
-					>We believe research is a powerful tool to help solve the problems facing our communities and build a kinder, braver world. That’s why we work with leading experts and youth themselves to conduct and amplify quality research. It is in collecting and documenting youth experiences of mental health and the factors that impact their wellbeing that we can most effectively leverage our resources and ensure all of our programming is grounded in the latest scientific evidence.</p
-				>
-			</div>
-		</div>
 
-<!----------------------------------- -->
-<h2 class="tilesTitle">What We’ve Learned</h2>
-	<div class="cards"></div>
-    <div class="free-space--ourResearch"></div>
-	<div class="free-space--ourResearch"></div>
 
-<!-- ----------PAGINATION--------------------- -->
+			<div class="ourImpact-section">
+				<h1 class="ourImpact-tittle">SEARCH RESULTS</h1>
 
-<div class="pagination">
-	
-  <!-- <span class="page active">1</span>
-  <span class="page">2</span>
-  <span class="page">3</span>
-  <span class="page">4</span>
-  <span class="next">NEXT</span> -->
+<div class="articleListContainer">
+
 </div>
+				</div>
+		
 
-<!-- ---------------------------------- -->
 
+<!-- ---------------------------------------------- -->
 			<footer class="footer">
 				<div class="footer-container fade-text">
 					<div class="footer-logo">
@@ -305,18 +287,22 @@
 
 		<script
 			type="module"
+			src="../js/expandableSection.js"></script>
+		<script
+			type="module"
 			src="../js/script.js"></script>
 		<script
 			type="module"
-			src="../js/video.js"></script>
+			src="../js/animation.js"></script>
 		<script
 			type="module"
 			src="../js/loader.js"></script>
+
+					<script
+			type="module"
+			src="../js/acordion-section.js"></script>
 		<script
 			type="module"
-			src="../js/paginationArticles.js"></script>
-		<script
-			type="module"
-			src="../js/animation.js"></script>
+			src="../js/searchArticlesResults.js"></script>
 	</body>
 </html>
